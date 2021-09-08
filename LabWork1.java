@@ -5,10 +5,10 @@ public class LabWork1 {
         return (float) (Math.random()*dif + start);
     }
 
-    public static void printAnswer(double f[][]){
-        for (int i = 0; i < f.length; i++) {  //идём по строкам
+    public static void printAnswer(double[][] f){
+        for (double[] doubles : f) {  //идём по строкам
             for (int j = 0; j < f[0].length; j++) {  //идём по столбцам
-                System.out.printf("%.2f", f[i][j]);
+                System.out.printf("%.2f", doubles[j]);
                 System.out.print(" ");//вывод элемента
             }
             System.out.println(); //перенос строки
