@@ -48,11 +48,11 @@ public class LabWork1 {
         for (i = 0; i < 11; i++){
             for (j = 0; j < 11; j++) {
                 if (a[i] == 13){
-                    f[i][j] = Math.asin(Math.exp(Math.pow(-Math.abs(Math.exp(x[j])), 1/3D)));
+                    f[i][j] = Math.asin(Math.exp(Math.pow(-Math.abs(Math.exp(x[j])), 1/3d)));
                 } else if ((a[i] == 7) || (a[i] == 11) || (a[i] == 12) || (a[i] == 15) || (a[i] == 16)){
                     f[i][j] = Math.pow(Math.atan(Math.sin(x[j]))*Math.asin(Math.exp(-Math.abs(x[j]))) + 1, Math.cos(Math.tan(x[j])));
                 } else {
-                    f[i][j] = Math.pow(Math.pow(Math.atan((x[j]+1) * Math.E + 1) * Math.pow(Math.pow((3.0/x[j]), x[j]) * (4 + Math.pow(x[j], 1/3D)), Math.tan(x[j])) + 1, 2) + 3/4D, Math.pow(0.5/Math.pow((1 - x[j])/3.0/2.0, 3.0), 3.0));
+                    f[i][j] = Math.pow(Math.pow(Math.atan((x[j]+1) * Math.E + 1) * Math.pow(Math.pow((3d/x[j]), x[j]) * (4 + Math.pow(x[j], 1/3d)), Math.tan(x[j])) + 1, 2) + 3/4d, Math.pow(0.5/Math.pow((1 - x[j])/3.d/2d, 3d), 3d));
                 }
             }
         }
