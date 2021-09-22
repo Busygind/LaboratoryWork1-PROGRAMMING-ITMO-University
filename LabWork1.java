@@ -28,14 +28,17 @@ public class LabWork1 {
         }
     }
 
+    public static void fillArray(long a[], int start){
+        for (int i = 0; i < a.length; i++){
+            a[i] = start + i;
+        }
+    }
     public static void main(String[] args) {
         int i, j;
 
         //Заполнение массива числами от 6 до 16
         long[] a = new long[11];
-        for (i = 0; i < a.length ; i++){
-            a[i] = 6+i;
-        }
+        fillArray(a, 6);
 
         //Заполнение массива случайными числами
         float[] x = new float[11];
@@ -45,8 +48,8 @@ public class LabWork1 {
 
         //Заполнение двумерного массива
         double[][] f = new double[11][11];
-        for (i = 0; i < 11; i++){
-            for (j = 0; j < 11; j++) {
+        for (i = 0; i < f.length; i++) {
+            for (j = 0; j < f[i].length; j++) {
                 if (a[i] == 13){
                     f[i][j] = Math.asin(Math.exp(Math.pow(-Math.abs(Math.exp(x[j])), 1/3d)));
                 } else if ((a[i] == 7) || (a[i] == 11) || (a[i] == 12) || (a[i] == 15) || (a[i] == 16)){
